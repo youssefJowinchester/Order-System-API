@@ -1,0 +1,42 @@
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.AssemblyInfo.cs
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.deps.json
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.pdb
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Core.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Repository.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Repository.pdb
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Core.pdb
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.csproj.CopyComplete
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\refint\OrderSystem.Service.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.pdb
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\ref\OrderSystem.Service.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.xml
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Repository.xml
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Core.xml
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.deps.json
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.pdb
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Service.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Core.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Repository.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Repository.pdb
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Repository.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Core.pdb
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\bin\Debug\net6.0\OrderSystem.Core.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.csproj.AssemblyReference.cache
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.AssemblyInfoInputs.cache
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.AssemblyInfo.cs
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.csproj.CoreCompileInputs.cache
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.csproj.CopyComplete
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\refint\OrderSystem.Service.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\OrderSystem.Service.pdb
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Service\obj\Debug\net6.0\ref\OrderSystem.Service.dll

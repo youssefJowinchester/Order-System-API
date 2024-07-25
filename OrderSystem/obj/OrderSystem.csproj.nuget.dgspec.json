@@ -1,0 +1,294 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem\\OrderSystem.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Core\\OrderSystem.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Core\\OrderSystem.Core.csproj",
+        "projectName": "OrderSystem.Core",
+        "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Core\\OrderSystem.Core.csproj",
+        "packagesPath": "C:\\Users\\U\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.32, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.32, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\OrderSystem.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\OrderSystem.Repository.csproj",
+        "projectName": "OrderSystem.Repository",
+        "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\OrderSystem.Repository.csproj",
+        "packagesPath": "C:\\Users\\U\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Core\\OrderSystem.Core.csproj": {
+                "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Core\\OrderSystem.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Service\\OrderSystem.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Service\\OrderSystem.Service.csproj",
+        "projectName": "OrderSystem.Service",
+        "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Service\\OrderSystem.Service.csproj",
+        "packagesPath": "C:\\Users\\U\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\OrderSystem.Repository.csproj": {
+                "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\OrderSystem.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "FluentEmail.Core": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "FluentEmail.Smtp": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem\\OrderSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem\\OrderSystem.csproj",
+        "projectName": "OrderSystem",
+        "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem\\OrderSystem.csproj",
+        "packagesPath": "C:\\Users\\U\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\OrderSystem.Repository.csproj": {
+                "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Repository\\OrderSystem.Repository.csproj"
+              },
+              "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Service\\OrderSystem.Service.csproj": {
+                "projectPath": "C:\\Users\\U\\Desktop\\git project\\Order-Management-System-API-main\\OrderSystem.Service\\OrderSystem.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

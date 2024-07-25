@@ -1,0 +1,32 @@
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.deps.json
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.runtimeconfig.json
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.pdb
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.AssemblyInfo.cs
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\refint\OrderSystem.Core.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.pdb
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.genruntimeconfig.cache
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\ref\OrderSystem.Core.dll
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.xml
+\\Mac\Home\Documents\C#_Assignment\OrderSystemAPI\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.deps.json
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.runtimeconfig.json
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.pdb
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\bin\Debug\net6.0\OrderSystem.Core.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.csproj.AssemblyReference.cache
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.AssemblyInfoInputs.cache
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.AssemblyInfo.cs
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\refint\OrderSystem.Core.dll
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.xml
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.pdb
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\OrderSystem.Core.genruntimeconfig.cache
+C:\Users\U\Desktop\git project\Order-Management-System-API-main\OrderSystem.Core\obj\Debug\net6.0\ref\OrderSystem.Core.dll

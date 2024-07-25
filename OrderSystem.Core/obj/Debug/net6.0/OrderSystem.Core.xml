@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderSystem.Core</name>
+    </assembly>
+    <members>
+        <member name="T:OrderSystem.Core.Enums.OrderStatus">
+            <summary>
+            Represents the status of an order in the order management system.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.OrderStatus.Pending">
+            <summary>
+            Indicates that the order is pending.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.OrderStatus.Processing">
+            <summary>
+            Indicates that the order is being processed.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.OrderStatus.Shipped">
+            <summary>
+            Indicates that the order has been shipped.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.OrderStatus.Delivered">
+            <summary>
+            Indicates that the order has been delivered.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.OrderStatus.Cancelled">
+            <summary>
+            Indicates that the order has been cancelled.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Enums.PaymentMethod">
+            <summary>
+            Represents the available payment methods in the order management system.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.PaymentMethod.CreditCard">
+            <summary>
+            Payment made using a credit card.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.PaymentMethod.PayPal">
+            <summary>
+            Payment made using PayPal.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.PaymentMethod.Cash">
+            <summary>
+            Payment made in cash.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Enums.UserRole">
+            <summary>
+            Represents the roles assigned to users in the system.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.UserRole.Admin">
+            <summary>
+            Indicates an administrator role with full access.
+            </summary>
+        </member>
+        <member name="F:OrderSystem.Core.Enums.UserRole.Customer">
+            <summary>
+            Indicates a customer role with limited access.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.BaseModel">
+            <summary>
+            Represents the base class for all entities in the order management system.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.BaseModel.Id">
+            <summary>
+            Gets or sets the unique identifier for the entity.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.Customer">
+            <summary>
+            Represents a customer in the order management system.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Customer.Name">
+            <summary>
+            Gets or sets the name of the customer.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Customer.Email">
+            <summary>
+            Gets or sets the email of the customer.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Customer.Orders">
+            <summary>
+            Gets or sets the collection of orders associated with the customer.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.Emailllll.EmailMessage">
+            <summary>
+            Represents an email message to be sent.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Emailllll.EmailMessage.To">
+            <summary>
+            Gets or sets the recipient email address.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Emailllll.EmailMessage.Subject">
+            <summary>
+            Gets or sets the subject of the email.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Emailllll.EmailMessage.Body">
+            <summary>
+            Gets or sets the body content of the email.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.Invoice">
+            <summary>
+            Represents an invoice associated with an order in the order management system.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Invoice.OrderId">
+            <summary>
+            Gets or sets the unique identifier of the associated order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Invoice.Order">
+            <summary>
+            Gets or sets the order associated with this invoice.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Invoice.InvoiceDate">
+            <summary>
+            Gets or sets the date and time when the invoice was created.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Invoice.TotalAmount">
+            <summary>
+            Gets or sets the total amount of the invoice.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.Order">
+            <summary>
+            Represents an order in the order management system.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Order.CustomerId">
+            <summary>
+            Gets or sets the unique identifier of the customer who placed the order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Order.Customer">
+            <summary>
+            Gets or sets the customer associated with this order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Order.OrderDate">
+            <summary>
+            Gets or sets the date and time when the order was placed.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Order.TotalAmount">
+            <summary>
+            Gets or sets the total amount of the order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Order.OrderItems">
+            <summary>
+            Gets or sets the collection of items included in the order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Order.PaymentMethod">
+            <summary>
+            Gets or sets the payment method used for the order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Order.Status">
+            <summary>
+            Gets or sets the status of the order.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.OrderItem">
+            <summary>
+            Represents an item in an order in the order management system.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.OrderItem.OrderId">
+            <summary>
+            Gets or sets the unique identifier of the associated order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.OrderItem.Order">
+            <summary>
+            Gets or sets the order associated with this order item.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.OrderItem.ProductId">
+            <summary>
+            Gets or sets the unique identifier of the product associated with this order item.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.OrderItem.Product">
+            <summary>
+            Gets or sets the product associated with this order item.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.OrderItem.Quantity">
+            <summary>
+            Gets or sets the quantity of the product ordered.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.OrderItem.UnitPrice">
+            <summary>
+            Gets or sets the unit price of the product at the time of the order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.OrderItem.Discount">
+            <summary>
+            Gets or sets the discount applied to the order item.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.Product">
+            <summary>
+            Represents a product in the order management system.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Product.Name">
+            <summary>
+            Gets or sets the name of the product.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Product.Price">
+            <summary>
+            Gets or sets the price of the product.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.Product.Stock">
+            <summary>
+            Gets or sets the available stock quantity of the product.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Models.User">
+            <summary>
+            Represents a user in the order management system.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.User.Username">
+            <summary>
+            Gets or sets the username of the user.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.User.PasswordHash">
+            <summary>
+            Gets or sets the hashed password of the user.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Models.User.Role">
+            <summary>
+            Gets or sets the role of the user.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1">
+            <summary>
+            Generic repository interface for basic CRUD operations and specifications pattern.
+            </summary>
+            <typeparam name="T">The type of the entity.</typeparam>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.GetAllAsync">
+            <summary>
+            Gets all entities asynchronously.
+            </summary>
+            <returns>A task that represents the asynchronous operation. The task result contains an enumerable of entities.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.GetByIdAsync(System.Int32)">
+            <summary>
+            Gets an entity by its identifier asynchronously.
+            </summary>
+            <param name="id">The identifier of the entity.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains the entity if found; otherwise, null.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.AddAsync(`0)">
+            <summary>
+            Adds a new entity asynchronously.
+            </summary>
+            <param name="entity">The entity to add.</param>
+            <returns>A task that represents the asynchronous operation.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.Update(`0)">
+            <summary>
+            Updates an existing entity.
+            </summary>
+            <param name="entity">The entity to update.</param>
+            <returns>A task that represents the asynchronous operation.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.Delete(`0)">
+            <summary>
+            Deletes an entity.
+            </summary>
+            <param name="entity">The entity to delete.</param>
+            <returns>A task that represents the asynchronous operation.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.GetAllWithSpecAsync(OrderSystem.Core.Specifications.ISpecifications{`0})">
+            <summary>
+            Gets all entities that match the specified criteria asynchronously.
+            </summary>
+            <param name="spec">The specifications to match.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains an enumerable of entities that match the criteria.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.GetWithSpecAsync(OrderSystem.Core.Specifications.ISpecifications{`0})">
+            <summary>
+            Gets a single entity that matches the specified criteria asynchronously.
+            </summary>
+            <param name="spec">The specifications to match.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains the entity if found; otherwise, null.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1.GetCountAsync(OrderSystem.Core.Specifications.ISpecifications{`0})">
+            <summary>
+            Gets the count of entities that match the specified criteria asynchronously.
+            </summary>
+            <param name="spec">The specifications to match.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains the count of entities that match the criteria.</returns>
+        </member>
+        <member name="T:OrderSystem.Core.Repositories.Interfaces.IUnitOfWork">
+            <summary>
+            Represents a unit of work that allows to group multiple operations into a single transaction.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IUnitOfWork.Repository``1">
+            <summary>
+            Gets the generic repository for the specified entity type.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <returns>An instance of <see cref="T:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1"/>.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Repositories.Interfaces.IUnitOfWork.CompleteAsync">
+            <summary>
+            Commits all the changes made in the current transaction asynchronously.
+            </summary>
+            <returns>A task that represents the asynchronous operation. The task result contains the number of state entries written to the database.</returns>
+        </member>
+        <member name="T:OrderSystem.Core.Services.Interfaces.IAuthService">
+            <summary>
+            Provides methods for user authentication and registration.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Services.Interfaces.IAuthService.RegisterAsync(OrderSystem.Core.Models.User)">
+            <summary>
+            Registers a new user asynchronously.
+            </summary>
+            <param name="user">The user to register.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains the registration status or token.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Services.Interfaces.IAuthService.LoginAsync(System.String,System.String)">
+            <summary>
+            Logs in a user asynchronously.
+            </summary>
+            <param name="username">The username of the user.</param>
+            <param name="password">The password of the user.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains a token if successful.</returns>
+        </member>
+        <member name="T:OrderSystem.Core.Services.Interfaces.IEmailSender">
+            <summary>
+            Provides methods to send emails.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Services.Interfaces.IEmailSender.SendEmail(OrderSystem.Core.Models.Emailllll.EmailMessage)">
+            <summary>
+            Sends an email asynchronously.
+            </summary>
+            <param name="email">The email message to send.</param>
+        </member>
+        <member name="T:OrderSystem.Core.Services.Interfaces.IOrderService">
+            <summary>
+            Provides methods for managing orders.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Services.Interfaces.IOrderService.CreateOrderAsync(OrderSystem.Core.Models.Order)">
+            <summary>
+            Creates a new order asynchronously.
+            </summary>
+            <param name="order">The order to create.</param>
+            <returns>A task that represents the asynchronous operation.</returns>
+        </member>
+        <member name="M:OrderSystem.Core.Services.Interfaces.IOrderService.UpdateOrderStatusAsync(System.Int32,OrderSystem.Core.Enums.OrderStatus)">
+            <summary>
+            Updates the status of an existing order asynchronously.
+            </summary>
+            <param name="orderId">The ID of the order to update.</param>
+            <param name="status">The new status for the order.</param>
+            <returns>A task that represents the asynchronous operation.</returns>
+        </member>
+        <member name="T:OrderSystem.Core.Services.Interfaces.ITokenService">
+            <summary>
+            Provides methods for creating JWT tokens.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Services.Interfaces.ITokenService.CreateTokenAsync(OrderSystem.Core.Models.User)">
+            <summary>
+            Creates a JWT token for the specified user asynchronously.
+            </summary>
+            <param name="user">The user for whom to create the token.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains the generated token.</returns>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.BaseSpecifications`1">
+            <summary>
+            Base class for specifications to be used in querying entities.
+            </summary>
+            <typeparam name="T">The type of the entity.</typeparam>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.BaseSpecifications`1.Criteria">
+            <summary>
+            Gets or sets the criteria for filtering the entities.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.BaseSpecifications`1.Includes">
+            <summary>
+            Gets or sets the list of related entities to include in the query.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.BaseSpecifications`1.OrderBy">
+            <summary>
+            Gets or sets the expression for ordering the results in ascending order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.BaseSpecifications`1.OrderByDesc">
+            <summary>
+            Gets or sets the expression for ordering the results in descending order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.BaseSpecifications`1.Skip">
+            <summary>
+            Gets or sets the number of records to skip for pagination.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.BaseSpecifications`1.Take">
+            <summary>
+            Gets or sets the number of records to take for pagination.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.BaseSpecifications`1.IsPaginationEnabled">
+            <summary>
+            Gets or sets a value indicating whether pagination is enabled.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.BaseSpecifications`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.BaseSpecifications`1"/> class.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.BaseSpecifications`1.#ctor(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.BaseSpecifications`1"/> class with a specified criteria.
+            </summary>
+            <param name="criteria">The criteria to filter entities.</param>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.BaseSpecifications`1.AddOrderBy(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Adds an order by expression for ascending ordering.
+            </summary>
+            <param name="orderByExpression">The expression to order by.</param>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.BaseSpecifications`1.AddOrderByDesc(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Adds an order by expression for descending ordering.
+            </summary>
+            <param name="orderByDescExpression">The expression to order by in descending order.</param>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.BaseSpecifications`1.ApplyPagination(System.Int32,System.Int32)">
+            <summary>
+            Applies pagination settings.
+            </summary>
+            <param name="skip">The number of records to skip.</param>
+            <param name="take">The number of records to take.</param>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.CustomerSpecifications.CustomerWithOrdersSpecifications">
+            <summary>
+            Specifies criteria for querying orders associated with a specific customer, including filtering and sorting options.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.CustomerSpecifications.CustomerWithOrdersSpecifications.#ctor(System.Int32,OrderSystem.Core.Specifications.CustomerSpecifications.CustomerSpecParams)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.CustomerSpecifications.CustomerWithOrdersSpecifications"/> class with specified customer ID and sorting options.
+            </summary>
+            <param name="customerId">The ID of the customer.</param>
+            <param name="orderSpec">The specifications for querying orders.</param>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.CustomerSpecifications.OrdersWithCountSpecifications">
+            <summary>
+            Specifies criteria for counting orders associated with a specific customer, including optional filtering.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.CustomerSpecifications.OrdersWithCountSpecifications.#ctor(System.Int32,OrderSystem.Core.Specifications.CustomerSpecifications.CustomerSpecParams)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.CustomerSpecifications.OrdersWithCountSpecifications"/> class for a specific customer.
+            </summary>
+            <param name="customerId">The ID of the customer.</param>
+            <param name="specParams">The specifications for filtering orders.</param>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.ISpecifications`1">
+            <summary>
+            Represents the specifications pattern for querying entities.
+            </summary>
+            <typeparam name="T">The type of the entity.</typeparam>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.ISpecifications`1.Criteria">
+            <summary>
+            Gets or sets the criteria for filtering the entities.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.ISpecifications`1.Includes">
+            <summary>
+            Gets or sets the list of related entities to include in the query.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.ISpecifications`1.OrderBy">
+            <summary>
+            Gets or sets the expression for ordering the results in ascending order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.ISpecifications`1.OrderByDesc">
+            <summary>
+            Gets or sets the expression for ordering the results in descending order.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.ISpecifications`1.Skip">
+            <summary>
+            Gets or sets the number of records to skip for pagination.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.ISpecifications`1.Take">
+            <summary>
+            Gets or sets the number of records to take for pagination.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Core.Specifications.ISpecifications`1.IsPaginationEnabled">
+            <summary>
+            Gets or sets a value indicating whether pagination is enabled.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithFilteringForCountSpecifications">
+            <summary>
+            Specifies criteria for counting orders with optional filtering.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithFilteringForCountSpecifications.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithFilteringForCountSpecifications"/> class.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithSpecifications">
+            <summary>
+            Specifies criteria for querying orders, including filtering and sorting options.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithSpecifications.#ctor(OrderSystem.Core.Specifications.OrderSpecifications.OrderSpecParams)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithSpecifications"/> class with specified sorting and includes.
+            </summary>
+            <param name="orderSpec">The specifications for querying orders.</param>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithSpecifications.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.OrderSpecifications.OrderWithSpecifications"/> class for a specific order by ID.
+            </summary>
+            <param name="id">The ID of the order.</param>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithFilterionForCountSpecifications">
+            <summary>
+            Specifies criteria for counting products with optional filtering.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithFilterionForCountSpecifications.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithFilterionForCountSpecifications"/> class.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithSpecifications">
+            <summary>
+            Specifies criteria for querying products, including filtering and sorting options.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithSpecifications.#ctor(OrderSystem.Core.Specifications.ProductSpecifications.ProductSpecParams)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithSpecifications"/> class with specified search and sorting parameters.
+            </summary>
+            <param name="productSpec">The specifications for querying products.</param>
+        </member>
+        <member name="M:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithSpecifications.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Core.Specifications.ProductSpecifications.ProductWithSpecifications"/> class for a specific product by ID.
+            </summary>
+            <param name="id">The ID of the product.</param>
+        </member>
+    </members>
+</doc>

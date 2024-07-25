@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderSystem.Service</name>
+    </assembly>
+    <members>
+        <member name="M:OrderSystem.Service.AuthService.RegisterAsync(OrderSystem.Core.Models.User)">
+            <summary>
+            Registers a new user and returns a token.
+            </summary>
+            <param name="user">The user to register.</param>
+            <returns>A token for the registered user.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when the password is null or empty.</exception>
+        </member>
+        <member name="M:OrderSystem.Service.AuthService.LoginAsync(System.String,System.String)">
+            <summary>
+            Logs in a user and returns a token.
+            </summary>
+            <param name="username">The username of the user.</param>
+            <param name="password">The password of the user.</param>
+            <returns>A token for the logged-in user.</returns>
+            <exception cref="T:System.Exception">Thrown when the credentials are invalid.</exception>
+        </member>
+        <member name="T:OrderSystem.Service.EmailSender">
+            <summary>
+            Sends an email using the configured SMTP server.
+            </summary>
+            <param name="EM">The email message to send.</param>
+        </member>
+        <member name="M:OrderSystem.Service.OrderService.CreateOrderAsync(OrderSystem.Core.Models.Order)">
+            <summary>
+            Creates a new order and performs necessary operations.
+            </summary>
+            <param name="order">The order to create.</param>
+        </member>
+        <member name="M:OrderSystem.Service.OrderService.UpdateOrderStatusAsync(System.Int32,OrderSystem.Core.Enums.OrderStatus)">
+            <summary>
+            Updates the status of an existing order.
+            </summary>
+            <param name="orderId">The ID of the order to update.</param>
+            <param name="status">The new status of the order.</param>
+        </member>
+        <member name="T:OrderSystem.Service.TokenService">
+            <summary>
+            Service to handle token creation
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Service.TokenService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Service.TokenService"/> class.
+            </summary>
+            <param name="configuration">The configuration settings.</param>
+        </member>
+        <member name="M:OrderSystem.Service.TokenService.CreateTokenAsync(OrderSystem.Core.Models.User)">
+            <summary>
+            Creates a token asynchronously.
+            </summary>
+            <param name="user">The user for whom the token is being created.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains the token string.</returns>
+        </member>
+    </members>
+</doc>

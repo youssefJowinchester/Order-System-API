@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderSystem.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:OrderSystem.Repository.Data.Configurations.CustomerConfiguration">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Customer"/> entity for Entity Framework.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.Configurations.CustomerConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{OrderSystem.Core.Models.Customer})">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Customer"/> entity properties and relationships.
+            </summary>
+            <param name="builder">The entity type builder.</param>
+        </member>
+        <member name="T:OrderSystem.Repository.Data.Configurations.InvoiceConfiguration">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Invoice"/> entity for Entity Framework.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.Configurations.InvoiceConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{OrderSystem.Core.Models.Invoice})">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Invoice"/> entity properties and relationships.
+            </summary>
+            <param name="builder">The entity type builder.</param>
+        </member>
+        <member name="T:OrderSystem.Repository.Data.Configurations.OrderConfiguration">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Order"/> entity for Entity Framework.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.Configurations.OrderConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{OrderSystem.Core.Models.Order})">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Order"/> entity properties and relationships.
+            </summary>
+            <param name="builder">The entity type builder.</param>
+        </member>
+        <member name="T:OrderSystem.Repository.Data.Configurations.OrderItemConfiguration">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.OrderItem"/> entity for Entity Framework.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.Configurations.OrderItemConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{OrderSystem.Core.Models.OrderItem})">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.OrderItem"/> entity properties and relationships.
+            </summary>
+            <param name="builder">The entity type builder.</param>
+        </member>
+        <member name="T:OrderSystem.Repository.Data.Configurations.ProductConfiguration">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Product"/> entity for Entity Framework.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.Configurations.ProductConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{OrderSystem.Core.Models.Product})">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.Product"/> entity properties.
+            </summary>
+            <param name="builder">The entity type builder.</param>
+        </member>
+        <member name="T:OrderSystem.Repository.Data.Configurations.UserConfiguration">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.User"/> entity for Entity Framework.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.Configurations.UserConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{OrderSystem.Core.Models.User})">
+            <summary>
+            Configures the <see cref="T:OrderSystem.Core.Models.User"/> entity properties and relationships.
+            </summary>
+            <param name="builder">The entity type builder.</param>
+        </member>
+        <member name="T:OrderSystem.Repository.Data.OrderManagementDbContext">
+            <summary>
+            Represents the database context for the Order Management System.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.OrderManagementDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{OrderSystem.Repository.Data.OrderManagementDbContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Repository.Data.OrderManagementDbContext"/> class.
+            </summary>
+            <param name="options">The options for configuring the context.</param>
+        </member>
+        <member name="M:OrderSystem.Repository.Data.OrderManagementDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Configures the model for the context using the specified <see cref="T:Microsoft.EntityFrameworkCore.ModelBuilder"/>.
+            </summary>
+            <param name="modelBuilder">The model builder.</param>
+        </member>
+        <member name="P:OrderSystem.Repository.Data.OrderManagementDbContext.Customers">
+            <summary>
+            Gets or sets the Customers DbSet.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Repository.Data.OrderManagementDbContext.Orders">
+            <summary>
+            Gets or sets the Orders DbSet.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Repository.Data.OrderManagementDbContext.OrderItems">
+            <summary>
+            Gets or sets the OrderItems DbSet.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Repository.Data.OrderManagementDbContext.Products">
+            <summary>
+            Gets or sets the Products DbSet.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Repository.Data.OrderManagementDbContext.Invoices">
+            <summary>
+            Gets or sets the Invoices DbSet.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Repository.Data.OrderManagementDbContext.Users">
+            <summary>
+            Gets or sets the Users DbSet.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Repository.Repositories.GenericRepository`1">
+            <summary>
+            A generic repository for managing entities of type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type of the entity that the repository manages, constrained to <see cref="T:OrderSystem.Core.Models.BaseModel"/>.</typeparam>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.#ctor(OrderSystem.Repository.Data.OrderManagementDbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Repository.Repositories.GenericRepository`1"/> class.
+            </summary>
+            <param name="context">The database context.</param>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.AddAsync(`0)">
+            <summary>
+            Adds an entity asynchronously.
+            </summary>
+            <param name="entity">The entity to add.</param>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.Delete(`0)">
+            <summary>
+            Deletes an entity asynchronously.
+            </summary>
+            <param name="entity">The entity to delete.</param>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.GetAllAsync">
+            <summary>
+            Gets all entities asynchronously.
+            </summary>
+            <returns>A list of all entities.</returns>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.GetByIdAsync(System.Int32)">
+            <summary>
+            Gets an entity by its identifier asynchronously.
+            </summary>
+            <param name="id">The identifier of the entity.</param>
+            <returns>The entity with the specified identifier, or null if not found.</returns>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.Update(`0)">
+            <summary>
+            Updates an entity asynchronously.
+            </summary>
+            <param name="entity">The entity to update.</param>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.GetAllWithSpecAsync(OrderSystem.Core.Specifications.ISpecifications{`0})">
+            <summary>
+            Gets all entities that match the specified criteria asynchronously.
+            </summary>
+            <param name="spec">The specifications to apply.</param>
+            <returns>A list of entities that match the criteria.</returns>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.GetwithSpecAsync(OrderSystem.Core.Specifications.ISpecifications{`0})">
+            <summary>
+            Gets a single entity that matches the specified criteria asynchronously.
+            </summary>
+            <param name="spec">The specifications to apply.</param>
+            <returns>The entity that matches the criteria, or null if not found.</returns>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.GenericRepository`1.GetCountAsync(OrderSystem.Core.Specifications.ISpecifications{`0})">
+            <summary>
+            Gets the count of entities that match the specified criteria asynchronously.
+            </summary>
+            <param name="spec">The specifications to apply.</param>
+            <returns>The count of entities that match the criteria.</returns>
+        </member>
+        <member name="T:OrderSystem.Repository.Repositories.UnitOfWork">
+            <summary>
+            Implements the Unit of Work pattern for managing repositories and transactions.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.UnitOfWork.#ctor(OrderSystem.Repository.Data.OrderManagementDbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Repository.Repositories.UnitOfWork"/> class.
+            </summary>
+            <param name="context">The database context.</param>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.UnitOfWork.CompleteAsync">
+            <summary>
+            Saves changes to the database asynchronously.
+            </summary>
+            <returns>The number of state entries written to the database.</returns>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.UnitOfWork.DisposeAsync">
+            <summary>
+            Disposes the context asynchronously.
+            </summary>
+            <returns>A task representing the asynchronous dispose operation.</returns>
+        </member>
+        <member name="M:OrderSystem.Repository.Repositories.UnitOfWork.Repository``1">
+            <summary>
+            Retrieves a repository for the specified entity type.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <returns>An instance of <see cref="T:OrderSystem.Core.Repositories.Interfaces.IGenericRepository`1"/> for the specified entity type.</returns>
+        </member>
+        <member name="T:OrderSystem.Repository.Specifications.SpecificationEvaluator`1">
+            <summary>
+            Evaluates specifications for entities of type <typeparamref name="TEntity"/>.
+            </summary>
+            <typeparam name="TEntity">The type of the entity that the specifications apply to, constrained to <see cref="T:OrderSystem.Core.Models.BaseModel"/>.</typeparam>
+        </member>
+        <member name="M:OrderSystem.Repository.Specifications.SpecificationEvaluator`1.GetQuery(System.Linq.IQueryable{`0},OrderSystem.Core.Specifications.ISpecifications{`0})">
+            <summary>
+            Applies the specified criteria and includes to the input query.
+            </summary>
+            <param name="inputQuery">The initial query to which specifications will be applied.</param>
+            <param name="spec">The specifications containing filtering, ordering, and inclusion criteria.</param>
+            <returns>An <see cref="T:System.Linq.IQueryable`1"/> with the applied specifications.</returns>
+        </member>
+    </members>
+</doc>

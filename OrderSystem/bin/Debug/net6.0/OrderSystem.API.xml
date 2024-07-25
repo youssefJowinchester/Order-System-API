@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderSystem.API</name>
+    </assembly>
+    <members>
+        <member name="T:OrderSystem.Controllers.BaseApiController">
+            <summary>
+            Base API controller to be inherited by other API controllers.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Controllers.CustomersController">
+            <summary>
+            API controller for managing customers.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Controllers.CustomersController.CreateCustomer(OrderSystem.DTO.CustomerDto)">
+            <summary>
+            Creates a new customer.
+            </summary>
+            <param name="customerDto">Customer details</param>
+            <returns>Status of the operation</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.CustomersController.GetCustomerById(System.Int32)">
+            <summary>
+            Gets a customer by ID.
+            </summary>
+            <param name="customerId">Customer ID</param>
+            <returns>Customer details</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.CustomersController.GetCustomerOrders(System.Int32,OrderSystem.Core.Specifications.CustomerSpecifications.CustomerSpecParams)">
+            <summary>
+            Gets orders of a specific customer.
+            </summary>
+            <param name="customerId">Customer ID</param>
+            <param name="specParams">Specification parameters</param>
+            <returns>List of orders</returns>
+        </member>
+        <member name="T:OrderSystem.Controllers.InvoicesController">
+            <summary>
+            API controller for managing invoices.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Controllers.InvoicesController.GetInvoice(System.Int32)">
+            <summary>
+            Gets an invoice by its ID.
+            </summary>
+            <param name="invoiceId">Invoice ID</param>
+            <returns>Invoice details</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.InvoicesController.GetAllInvoices">
+            <summary>
+            Gets all invoices.
+            </summary>
+            <returns>List of invoices</returns>
+        </member>
+        <member name="T:OrderSystem.Controllers.OrdersController">
+            <summary>
+            API controller for managing orders.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Controllers.OrdersController.GetOrder(OrderSystem.Core.Specifications.OrderSpecifications.OrderSpecParams)">
+            <summary>
+            Gets all orders.
+            </summary>
+            <param name="orderSpec">Specification parameters</param>
+            <returns>List of orders</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.OrdersController.GetOrderById(System.Int32,OrderSystem.Core.Specifications.OrderSpecifications.OrderSpecParams)">
+            <summary>
+            Gets an order by its ID.
+            </summary>
+            <param name="Id">Order ID</param>
+            <returns>Order details</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.OrdersController.CreateOrder(OrderSystem.DTO.CreateOrderDTO)">
+            <summary>
+            Creates a new order.
+            </summary>
+            <param name="orderDto">Order details</param>
+            <returns>Status of the operation</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.OrdersController.UpdateOrderStatus(System.Int32,OrderSystem.Core.Enums.OrderStatus)">
+            <summary>
+            Updates the status of an existing order.
+            </summary>
+            <param name="orderId">Order ID</param>
+            <param name="status">New order status</param>
+            <returns>Status of the operation</returns>
+        </member>
+        <member name="T:OrderSystem.Controllers.ProductsController">
+            <summary>
+            API controller for managing products.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Controllers.ProductsController.GetProducts(OrderSystem.Core.Specifications.ProductSpecifications.ProductSpecParams)">
+            <summary>
+            Gets all products.
+            </summary>
+            <param name="productSpec">Specification parameters</param>
+            <returns>List of products</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.ProductsController.AddProduct(OrderSystem.DTO.ProductDto)">
+            <summary>
+            Adds a new product.
+            </summary>
+            <param name="productDto">Product details</param>
+            <returns>Status of the operation</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.ProductsController.GetProductById(System.Int32)">
+            <summary>
+            Gets a product by its ID.
+            </summary>
+            <param name="productId">Product ID</param>
+            <returns>Product details</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.ProductsController.UpdateProduct(System.Int32,OrderSystem.DTO.ProductDto)">
+            <summary>
+            Updates an existing product.
+            </summary>
+            <param name="productId">Product ID</param>
+            <param name="productDto">Updated product details</param>
+            <returns>Status of the operation</returns>
+        </member>
+        <member name="T:OrderSystem.Controllers.UsersController">
+            <summary>
+            API controller for managing user authentication.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Controllers.UsersController.Register(OrderSystem.DTO.UserDto)">
+            <summary>
+            Registers a new user.
+            </summary>
+            <param name="userDto">User details</param>
+            <returns>Status of the operation</returns>
+        </member>
+        <member name="M:OrderSystem.Controllers.UsersController.Login(OrderSystem.DTO.LoginDto)">
+            <summary>
+            Authenticates a user.
+            </summary>
+            <param name="loginDto">Login details</param>
+            <returns>JWT token</returns>
+        </member>
+        <member name="T:OrderSystem.Errors.ApiResponse">
+            <summary>
+            Represents the standard API response structure.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Errors.ApiResponse.StatusCode">
+            <summary>
+            Gets or sets the HTTP status code of the response.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Errors.ApiResponse.Message">
+            <summary>
+            Gets or sets the message associated with the response.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Errors.ApiResponse.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Errors.ApiResponse"/> class.
+            </summary>
+            <param name="statusCode">The HTTP status code.</param>
+            <param name="message">An optional custom message.</param>
+        </member>
+        <member name="M:OrderSystem.Errors.ApiResponse.GetDefaultMessageForStatusCode(System.Int32)">
+            <summary>
+            Gets the default message for the specified HTTP status code.
+            </summary>
+            <param name="statusCode">The HTTP status code.</param>
+            <returns>The default message.</returns>
+        </member>
+        <member name="T:OrderSystem.Errors.ApiServerErrorResponse">
+            <summary>
+            Represents a server error response in the API.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Errors.ApiServerErrorResponse.Details">
+            <summary>
+            Gets or sets additional details about the server error.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Errors.ApiServerErrorResponse.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Errors.ApiServerErrorResponse"/> class.
+            </summary>
+            <param name="statusCode">The HTTP status code.</param>
+            <param name="message">An optional custom message.</param>
+            <param name="details">Additional details about the error.</param>
+        </member>
+        <member name="T:OrderSystem.Errors.ApiValidationErrorResponse">
+            <summary>
+            Represents a validation error response in the API.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Errors.ApiValidationErrorResponse.Errors">
+            <summary>
+            Gets or sets the collection of validation error messages.
+            </summary>
+        </member>
+        <member name="M:OrderSystem.Errors.ApiValidationErrorResponse.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Errors.ApiValidationErrorResponse"/> class.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Helpers.MappingProfile">
+            <summary>
+            Defines the mappings between different DTOs and entities.
+            </summary>
+        </member>
+        <member name="T:OrderSystem.Helpers.Pagination`1">
+            <summary>
+            Represents a paginated result set.
+            </summary>
+            <typeparam name="T">The type of the data contained in the paginated result.</typeparam>
+        </member>
+        <member name="M:OrderSystem.Helpers.Pagination`1.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:OrderSystem.Helpers.Pagination`1"/> class.
+            </summary>
+            <param name="pageSize">The number of items per page.</param>
+            <param name="pageIndex">The current page index (1-based).</param>
+            <param name="count">The total number of items available.</param>
+            <param name="data">The items for the current page.</param>
+        </member>
+        <member name="P:OrderSystem.Helpers.Pagination`1.PageSize">
+            <summary>
+            Gets the number of items per page.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Helpers.Pagination`1.PageIndex">
+            <summary>
+            Gets the current page index (1-based).
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Helpers.Pagination`1.Count">
+            <summary>
+            Gets the total number of items available.
+            </summary>
+        </member>
+        <member name="P:OrderSystem.Helpers.Pagination`1.Data">
+            <summary>
+            Gets the items for the current page.
+            </summary>
+        </member>
+    </members>
+</doc>
